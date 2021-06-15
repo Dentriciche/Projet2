@@ -1,0 +1,24 @@
+1- charger le dataset
+2- regarder l'aspect du dataset avec head()
+3- examiner la forme du dataset
+4- chercher le nombre de données null avec info()
+5- comparer le dtype attendues avec les dtype apparraissant avec info()
+(un dtype qui ne concorde pas peut être le signe de données manquante)
+6- examiner la moyenne, écart type, quartiles et max min de sa donnée
+(si l'écart type est petit comparé à l'écart médiane-max ou médiane-min, cela peut être le signe de la présence d'outliers)
+
+7- séparer la database en 2. Une partie pour l'analyse exploratoire, l'autre pour les test statistiques
+
+
+
+8- faire un premier pairplot et heatmap pour voir si il n'y a pas de corrélation évidente, piste de travail
+
+9- les résultats des 3 trimestres sont très corrélés. On peut simplifier en faisant la moyenne de ces 3 colonnes
+
+10- mes pistes de travail vont être de regarder si on peut vérifier un certain nombre d'idées communément admises:
+un étudiant qui rate beaucoup de classes va rater plus facilement
+(est ce qu'il a des facteurs corrélé avec l'échec tel que les absences, le niveau social des parents, temps nécessaire pour aller en cours, état de santé, la quantité d'alcohol bu)
+les bonnes notes en cours sont corrélés avec le niveau d'études des parents, le temps consacré aux études
+les filles sont meilleures en cours que les garçons (éventuellement, les filles réussissent mieux dans les matières littéraires et les garçons dans les matières scientifiques)
+
+11- Fusion des notes des notes pour les 3 trimestres pour avoir une note générale (moyenne de G1 G2 G3)
